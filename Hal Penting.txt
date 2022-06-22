@@ -1,0 +1,7 @@
+- Hilangkan Tampilan Grid kategori
+- Temukan Lokasi Sekitar 
+- Tampilan List tambahkan direct lokasi (Activity List)
+- Profil dinamis pke Apia
+- Pdncarian nama usaha
+- Lokasi favorite  pke db sqlite
+- Rating di hilangakan

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">UMKM</string>
+    <string name="masuk_untuk_melanjutkan">Masuk Untuk Melanjutkan!</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="title_activity_beranda">BerandaActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kategori">Kategori</string>
+    <string name="temukan_lokasi_sekitar">Temukan Lokasi Sekitar</string>
+    <string name="keluar">Keluar</string>
+    <string name="profil">Profil</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="lokasi_favorite">Lokasi Favorite</string>
+    <string name="semua_lokasi">Semua Lokasi</string>
+    <string name="lokasi_terbaru">Lokasi Terbaru</string>
+    <string name="cari_umkm_anda_disini">Cari UMKM anda disini</string>
+    <string name="makanan">Makanan</string>
+    <string name="textDescription">Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="toko_kelontong_jaya_makmur">Toko Kelontong Jaya Makmur</string>
+    <string name="lokasi_sekitar">Lokasi Sekitar</string>
+    <string name="jarak">Jarak</string>
+    <string name="mohon_anda_membaca_kebijakan_privasi_ini_dengan_seksama_untuk_memastikan_bahwa_anda_memahami_bagaimana_tanihub_mengumpulkan_menyimpan_menggunakan_memindahkan_mengungkapkan_dan_melindungi_informasi_pribadi_yang_diperoleh_melalui_aplikasi_kami_n_n_penggunaan_anda_atas_aplikasi_dan_layanan_kami_tunduk_pada_ketentuan_penggunaan_dan_kebijakan_privasi_ini_dan_mengindikasikan_persetujuan_anda_terhadap_ketentuan_penggunaan_dan_kebijakan_privasi_tersebut">MOHON ANDA MEMBACA KEBIJAKAN PRIVASI INI DENGAN SEKSAMA UNTUK MEMASTIKAN BAHWA ANDA MEMAHAMI BAGAIMANA Smart UMKM MENGUMPULKAN, MENYIMPAN, MENGGUNAKAN, MEMINDAHKAN, MENGUNGKAPKAN DAN MELINDUNGI INFORMASI PRIBADI YANG DIPEROLEH MELALUI APLIKASI KAMI.<br /> <br /> Penggunaan Anda atas Aplikasi dan Layanan kami tunduk pada Ketentuan Penggunaan dan Kebijakan Privasi ini dan mengindikasikan persetujuan Anda terhadap Ketentuan Penggunaan dan Kebijakan Privasi tersebut.</string>
+    <string name="lokasi_populer">Lokasi Populer</string>
+</resources>

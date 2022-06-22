@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPolicyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.UMKM.PopupOverlay" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Kebijakan Privasi"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        android:text="@string/mohon_anda_membaca_kebijakan_privasi_ini_dengan_seksama_untuk_memastikan_bahwa_anda_memahami_bagaimana_tanihub_mengumpulkan_menyimpan_menggunakan_memindahkan_mengungkapkan_dan_melindungi_informasi_pribadi_yang_diperoleh_melalui_aplikasi_kami_n_n_penggunaan_anda_atas_aplikasi_dan_layanan_kami_tunduk_pada_ketentuan_penggunaan_dan_kebijakan_privasi_ini_dan_mengindikasikan_persetujuan_anda_terhadap_ketentuan_penggunaan_dan_kebijakan_privasi_tersebut"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

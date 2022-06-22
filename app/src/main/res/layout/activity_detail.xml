@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparant"
+            android:translationZ="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:elevation="4dp"
+                android:src="@drawable/ic_arrow_back_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Toko Kelontong Jaya Makmur"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/helper"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/roundedView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/helper" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="268dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageFolder"
+            android:src="@drawable/ic_share_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/roundedView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/lightGreen"
+            app:layout_constraintEnd_toEndOf="@+id/imageShare"
+            app:layout_constraintStart_toStartOf="@+id/imageShare"
+            app:layout_constraintTop_toBottomOf="@+id/imageShare" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_location_on_24"
+            app:layout_constraintStart_toEndOf="@+id/imageComment"
+            app:layout_constraintEnd_toStartOf="@+id/imageShare"
+            app:layout_constraintTop_toTopOf="@+id/roundedView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direction"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/lightGreen"
+            app:layout_constraintEnd_toEndOf="@+id/imageFolder"
+            app:layout_constraintStart_toStartOf="@+id/imageFolder"
+            app:layout_constraintTop_toBottomOf="@+id/imageFolder" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imagePhone"
+            android:src="@drawable/ic_mode_comment_24"
+            app:layout_constraintEnd_toStartOf="@+id/imageFolder"
+            app:layout_constraintTop_toTopOf="@+id/roundedView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/lightGreen"
+            app:layout_constraintEnd_toEndOf="@+id/imageComment"
+            app:layout_constraintStart_toStartOf="@+id/imageComment"
+            app:layout_constraintTop_toBottomOf="@+id/imageComment" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imagePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+      
+            android:src="@drawable/ic_phone_24"
+            app:layout_constraintEnd_toStartOf="@+id/imageComment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/roundedView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/lightGreen"
+            app:layout_constraintEnd_toEndOf="@+id/imagePhone"
+            app:layout_constraintStart_toStartOf="@+id/imagePhone"
+            app:layout_constraintTop_toBottomOf="@+id/imagePhone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_favorite_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/helper"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAddress"
+            android:text="Alamat : Pk 7"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textPhone"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEmail"
+            android:text="Email : dion@gmail.com"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textAddress"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/textDescription"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/appComment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+
+        <ProgressBar
+            android:id="@+id/loadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/appComment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/lightGreen"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_corner_line"
+            android:drawableEnd="@drawable/ic_send_24"
+            android:hint="Komentar"
+            android:fontFamily="@font/roboto"
+            android:inputType="text"
+            android:padding="6dp"
+            app:layout_constraintBottom_toBottomOf="@id/appComment"
+            app:layout_constraintEnd_toEndOf="@id/appComment"
+            app:layout_constraintStart_toStartOf="@id/appComment"
+            app:layout_constraintTop_toTopOf="@+id/appComment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_location_new"
+            android:icon="@drawable/ic_add_location_24"
+            android:title="@string/lokasi_terbaru" />
+        <item
+            android:id="@+id/nav_location_favorite"
+            android:icon="@drawable/ic_favorite_24"
+            android:title="@string/lokasi_populer" />
+        <item
+            android:id="@+id/nav_options"
+            android:icon="@drawable/ic_settings_24"
+            android:title="@string/pengaturan" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_pin_24"
+            android:title="@string/profil" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app_24"
+            android:title="@string/keluar" />
+    </group>
+</menu>
